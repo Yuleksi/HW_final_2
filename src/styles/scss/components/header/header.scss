@@ -1,0 +1,146 @@
+.header {
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+.nav-link{
+  color: map-get($colors, 'gray');
+}
+
+.navbar-link {
+    text-transform: uppercase;
+    font-weight: 700;
+  text-decoration: none;
+  color: map-get($colors, 'gray');
+  display: inline-block;
+  transition: 0.3s color;
+
+  }
+
+  .navbar-link:hover{
+    color: map-get($colors, 'accent-color') ;
+  }
+
+  .navbar-toggler {
+    color: map-get($colors, 'white');
+    border-color: map-get($colors, 'white');
+  }
+
+  .header__top {
+    gap: 10px;
+  }
+
+.navbar-divider {
+  font-size: map-get($font-sizes, 'xxl');
+  margin-right: 10px;
+  color:  map-get($colors, 'accent-color');
+  font-weight: bold;
+}
+
+
+  .container {
+    position: relative;
+  }
+  .navbar-brand {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-nav {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+
+
+
+    .nav-item a {
+        font-size: map-get($font-sizes, 'sm');
+        color: map-get($colors, 'blue');
+        font-weight: 600;
+        width: 100%;
+      display: inline-block;
+      transition: 0.3s color;
+      }
+
+    .navbar-item a:hover{
+      color: map-get($colors, 'accent-color') ;
+    }
+
+    }
+
+
+  .section-header {
+    margin-bottom: 30px;
+
+   nav .a header link {
+white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    }
+
+
+  &__top {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 0;
+  }
+
+  &__lang-switcher {
+
+    input {
+      display: none;
+    }
+
+    span {
+      cursor: pointer;
+      font-size: map-get($font-sizes, 'fs12');
+      line-height: map-get($font-sizes, 'sm');
+      font-weight: 700;
+      color: map-get($colors, 'gray');
+      display: inline-block;
+      padding: 5px 7px;
+      border-radius: 8px;
+    }
+
+    input:checked + span {
+      background:  map-get($colors, 'accent-color');;
+    }
+  }
+
+  &__address a, &__contact a {
+    text-decoration: none;
+    color: map-get($colors, 'gray');
+    font-size: map-get($font-sizes, 'sm');
+
+  }
+
+
+ &__socials {
+   color: map-get($colors, 'gray');
+   font-size: map-get($font-sizes, 'md');
+ }
+
+.header__address{
+    gap: 30px;
+  }
+
+  &__contact a {
+    font-weight: 700;
+  }
+
+  &__dot-after:after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: map-get($colors, 'white');
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+  }
+
+}
