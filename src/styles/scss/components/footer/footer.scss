@@ -10,13 +10,14 @@
     line-height: map-get($font-sizes, 'sm');
   }
 
-  ul{
-    gap: 10px;
-  }
-
-  .dot-after:after {
-    background-color: map-get($colors, 'gray');
-    margin: 3px 6px;
+  .dot-after::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: map-get($colors, 'gray');
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
   }
 
   .container {
@@ -51,7 +52,9 @@
     gap: 10px;
   }
 
-  &__contacts{
-    gap: 10px;
+  .footer__contacts .bi-facebook{
+      color: map-get($colors, 'blue');
+      font-size: map-get($font-sizes, 'fs20');
+
   }
 }
