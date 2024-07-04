@@ -253,6 +253,12 @@ body {
 .header .nav-link {
   color: #B3B3BA;
 }
+.header .nav-item a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0;
+}
 .header .navbar-link {
   text-transform: uppercase;
   font-weight: 700;
@@ -268,7 +274,7 @@ body {
   border-color: #fff;
 }
 .header .navbar-divider {
-  font-size: 38px;
+  font-size: 30px;
   margin-right: 10px;
   color: #F0145A;
   font-weight: bold;
@@ -283,15 +289,13 @@ body {
 .header .navbar-nav {
   margin-top: 20px;
   display: flex;
-  gap: 15px;
-  padding-top: 0;
+  gap: 10px;
 }
 .header .navbar-nav .nav-link {
   font-size: 16px;
   color: #24A3FF;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 15px;
   transition: color 0.3s;
   font-weight: 700;
   position: relative;
@@ -327,7 +331,7 @@ body {
 .header__lang-switcher input:checked + span {
   background: #F0145A;
 }
-.header__address a, .header__contact a {
+.header__address a, .header__contact a, .header__socials a {
   text-decoration: none;
   color: #B3B3BA;
   font-size: 16px;
@@ -358,7 +362,7 @@ body {
     margin-right: 230px;
   }
   .header .navbar-divider {
-    font-size: 20px;
+    font-size: 19px;
   }
   .header img {
     max-height: 80px;
@@ -384,17 +388,12 @@ body {
     align-items: flex-start;
     margin-right: 50px;
   }
-  .header .header .navbar-brand, .header .header .navbar-divider, .header .header .navbar-link, .header .header .header__top {
-    display: block;
-    text-align: left;
-    margin: 0 10px;
+  .header .header .navbar-divider {
+    font-size: 16px;
   }
   .header .header img {
     max-height: 70px;
     max-width: 70px;
-  }
-  .header .header .navbar-collapse {
-    max-width: 100%;
   }
   .header .header .header__top .dot-after::after {
     content: "";
@@ -418,7 +417,7 @@ body {
     padding-right: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .header .header {
     padding-top: 60px;
   }
@@ -432,7 +431,6 @@ body {
   }
   .header .header .navbar-collapse .navbar-link {
     font-size: 12px;
-    margin: 0;
   }
   .header .header .navbar-collapse .navbar-nav {
     margin-top: 0;

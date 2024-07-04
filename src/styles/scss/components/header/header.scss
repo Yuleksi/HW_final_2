@@ -9,6 +9,13 @@
   color: map-get($colors, 'gray');
 }
 
+  .nav-item a {
+    font-size: map-get($font-sizes, 'sm');
+    color: map-get($colors, 'white');
+    font-weight: 700;
+    padding: 0;
+  }
+
 .navbar-link {
     text-transform: uppercase;
     font-weight: 700;
@@ -31,7 +38,7 @@
 
 
 .navbar-divider {
-  font-size: map-get($font-sizes, 'xxl');
+  font-size: map-get($font-sizes, 'xl');
   margin-right: 10px;
   color:  map-get($colors, 'accent-color');
   font-weight: bold;
@@ -50,9 +57,7 @@
   .navbar-nav {
     margin-top: 20px;
     display: flex;
-    gap: 15px;
-    padding-top: 0;
-
+    gap: 10px;
     }
 
 .navbar-nav .nav-link{
@@ -60,7 +65,6 @@
   color: map-get($colors, 'blue') ;
   text-decoration: none;
   margin-top: 10px;
-  margin-left: 15px;
   transition: color 0.3s;
   font-weight: 700;
   position: relative;
@@ -111,7 +115,7 @@
     }
   }
 
-  &__address a, &__contact a {
+  &__address a, &__contact a, &__socials a{
     text-decoration: none;
     color: map-get($colors, 'gray');
     font-size: map-get($font-sizes, 'sm');
