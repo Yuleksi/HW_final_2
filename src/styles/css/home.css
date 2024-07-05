@@ -382,31 +382,58 @@ body {
 }
 @media (max-width: 767px) {
   .header .header__top {
-    top: -40px;
+    top: -20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 50px;
   }
-  .header .header .navbar-divider {
-    font-size: 16px;
+  .header .header .navbar-brand, .header .header .navbar-divider, .header .header .navbar-link, .header .header .header__top {
+    display: block;
+    text-align: left;
+    margin: 0 10px;
   }
-  .header .header img {
-    max-height: 70px;
-    max-width: 70px;
+  .header .header .header .navbar-collapse {
+    margin: 0;
+    padding-right: 200px;
+    padding-top: 50px;
+  }
+  .header .header .header__top .dot-after::after {
+    content: "";
+  }
+  .header .header .header__lang-switcher, .header .header .header__address, .header .header .header__contact, .header .header .header__socials {
+    margin-bottom: 10px;
+  }
+  .header .header .navbar-nav {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header .header .navbar-nav .nav-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .header .header .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 576px) {
   .header .header {
     padding-top: 60px;
-  }
-  .header .header .navbar-divider {
-    font-size: 16px;
-    margin-right: 200px;
-  }
-  .header .header .navbar-link {
-    font-size: 12px;
   }
   .header .header .navbar-collapse {
     background: #fff;
     padding: 10px;
-    font-weight: 400;
+  }
+  .header .header .navbar-collapse .navbar-divider {
+    font-size: 16px;
+    margin-right: 200px;
+  }
+  .header .header .navbar-collapse .navbar-link {
+    font-size: 12px;
   }
   .header .header .navbar-collapse .navbar-nav {
     margin-top: 0;
@@ -417,15 +444,16 @@ body {
   .header .header__address, .header .header__socials {
     display: none !important;
   }
-  .header .header__dot-after:after {
-    display: none;
-  }
   .header .header__top {
     top: -60px;
     left: 0;
     padding: 10px 15px;
     background: rgba(255, 255, 255, 0.44);
     justify-content: space-between !important;
+  }
+  .header .header .dot-after::after {
+    content: "";
+    display: none;
   }
 }
 
